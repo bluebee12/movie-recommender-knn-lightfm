@@ -1,0 +1,58 @@
+name: movie-reco
+channels:
+  - conda-forge
+
+dependencies:
+  # Core
+  - python=3.10
+  - pip
+
+  # Core Data / ML
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+  - tqdm
+
+  # Data storage
+  - pyarrow
+  - fastparquet
+
+  # NLP / Text
+  - nltk
+  - spacy
+
+  # Utilities
+  - pyyaml
+  - requests
+  - python-dotenv
+
+  - pip:
+  
+      # Recommender Systems
+      - implicit
+      # Embeddings / Semantic Search
+      - sentence-transformers
+      - faiss-cpu
+  
+      # LLM / Research Agent
+      - transformers
+      - huggingface-hub
+  
+      # API / Backend
+      - fastapi
+      - uvicorn
+
+  
+      # UI 
+      - gradio
+      - streamlit
+
+  
+      # Visualisation / Analysis
+      - matplotlib
+      - seaborn
+
+      # Dev tools
+      - ipython
+      - rich
